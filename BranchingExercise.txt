@@ -1,0 +1,9 @@
+1: git checkout -b "branch name"
+
+2: A fast-forward merge happens when there the two branches being merged share a continuing log history. The branch being merged has a direct line to the current branch. A recursive merge is when the current branch and the branch being merged don't share the same log history and are at different parts of the tree. 
+
+3: git checkout "branch name"
+
+4: git branch -d "branch name"
+
+5: Merge conflicts happen when two branches both have committed changes that overlap each other on the same file. Git is unable to decide which version of the changes should stay, so the author must select the info in the detected conflict file and resolve the conflict before committing.   
