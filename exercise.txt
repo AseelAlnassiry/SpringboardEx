@@ -1,0 +1,53 @@
+➜  Springboard mkdir learn_git_again
+➜  Springboard cd learn_git_again
+➜  learn_git_again touch third.txt
+➜  learn_git_again git init
+Initialized empty Git repository in /Users/aseelalnassiry/Documents/Springboard/learn_git_again/.git/
+➜  learn_git_again git:(main) ✗ git add third.txt
+➜  learn_git_again git:(main) ✗ git commit -m "adding third.txt"
+[main (root-commit) 0daa9f8] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+➜  learn_git_again git:(main) git log
+commit 0daa9f89d053729f470f608a06f605984cf4c25e (HEAD -> main)
+Author: Aseel Alnassiry <aseelalnassiry@gmail.com>
+Date:   Tue Apr 4 09:25:48 2023 -0700
+
+    adding third.txt
+➜  learn_git_again git:(main) touch fourth.txt
+➜  learn_git_again git:(main) ✗ git add fourth.txt
+➜  learn_git_again git:(main) ✗ git commit -m "adding fourth.txt"
+[main dabc5f4] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+➜  learn_git_again git:(main) rm third.txt
+➜  learn_git_again git:(main) ✗ git add .
+➜  learn_git_again git:(main) ✗ git commit -m "removing third.txt"
+[main b3007ed] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+➜  learn_git_again git:(main) git log
+commit b3007edf06322d047baf16a4cfe7efc80b53c3b3 (HEAD -> main)
+Author: Aseel Alnassiry <aseelalnassiry@gmail.com>
+Date:   Tue Apr 4 09:26:53 2023 -0700
+
+    removing third.txt
+
+commit dabc5f4eb58cbc2fffc816cc9ce06ab87304f918
+Author: Aseel Alnassiry <aseelalnassiry@gmail.com>
+Date:   Tue Apr 4 09:26:34 2023 -0700
+
+    adding fourth.txt
+
+commit 0daa9f89d053729f470f608a06f605984cf4c25e
+Author: Aseel Alnassiry <aseelalnassiry@gmail.com>
+Date:   Tue Apr 4 09:25:48 2023 -0700
+
+    adding third.txt
+➜  learn_git_again git:(main) git config --global core.pager cat
+➜  learn_git_again git:(main) git config --global --list --show-origin
+file:/Users/aseelalnassiry/.gitconfig	user.name=Aseel Alnassiry
+file:/Users/aseelalnassiry/.gitconfig	user.email=aseelalnassiry@gmail.com
+file:/Users/aseelalnassiry/.gitconfig	init.defaultbranch=main
+file:/Users/aseelalnassiry/.gitconfig	color.ui=auto
+file:/Users/aseelalnassiry/.gitconfig	core.pager=cat	
